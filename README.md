@@ -14,8 +14,8 @@ Oceanic and Atmospheric Administration's (NOAA) storm database from 1950 - 2011
 
 Dataset was downloaded from [here](https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2). The data was cleaned and aggregated for optimal exploration.
 
-Source code for the project is available on [GitHub](https://github.com/batla/DataProducts)
+Source code for the application is available on [GitHub](https://github.com/batla/DataProducts)
 
-The presentation for the project can be found [here](http://rpubs.com/batla/)
+The slidify presentation for this application can be found [here](http://rpubs.com/batla/)
 
 
