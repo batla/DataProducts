@@ -84,26 +84,23 @@ property damage.</p>
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Data &amp; Conclusions from EDA</h2>
+    <h2>Data</h2>
   </hgroup>
   <article data-timings="">
-    <h3>Source Data</h3>
+    <p>Data for the NOAA Storm Data Explorer is based off of the U.S. National Oceanic and Atmospheric 
+Administration (NOAA) storm database. Data was downloaded from this <a href="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2">site</a>. The data was then cleaned up and prepared for us by the NOAA Storm Data Explorer Application. The data used by this application can be found on <a href="https://github.com/batla/DataProducts">github</a>. Here&#39;s a sample.</p>
 
-<p>Data for the NOAA Storm Data Explorer is based off of the U.S. National Oceanic and Atmospheric 
-Administration (NOAA) storm database. Data was downloaded from this <a href="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2">site</a>. The data was then cleaned up and prepared for us by the NOAA Storm Data Explorer Application.</p>
+<pre><code class="r">stormDataAgg &lt;- fread(&#39;../data/stormData_agg.csv&#39;)
+head(stormDataAgg, 5)
+</code></pre>
 
-<p>Fields not essential for the application were removed and data was aggregated by state and by year, with event types counted and impact summed.</p>
-
-<p>The data used in this application, as well as the source code may be found on <a href="https://github.com/batla/DataProducts">github</a>.</p>
-
-<h3>Conclusions from earlier Exploratory Data Analysis</h3>
-
-<p>EDA was performed in an earlier project.</p>
-
-<p>Analysis conducted from data collected by the NOAA between 1995-2011 shows
-that <strong>excessive heat</strong> and <strong>tornado</strong> events are most harmful to public
-health and <strong>flood</strong>, <strong>hurricane/typhoon</strong>, and <strong>storm surge</strong> events have 
-the greatest negative economic consequences.</p>
+<pre><code>##    YEAR   STATE  EVTYPE COUNT FATALITIES INJURIES PROPDMG CROPDMG
+## 1: 1950 alabama TORNADO     2          0       15 0.02750       0
+## 2: 1951 alabama TORNADO     5          0       13 0.03500       0
+## 3: 1952 alabama TORNADO    13          6      116 5.45250       0
+## 4: 1953 alabama TORNADO    22         16      248 3.07000       0
+## 5: 1954 alabama TORNADO    10          0       36 0.60753       0
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
@@ -114,13 +111,11 @@ the greatest negative economic consequences.</p>
     <h2>Appendix A</h2>
   </hgroup>
   <article data-timings="">
-    <h3>Impact on Population Health</h3>
+    <p>Earlier analysis shows that <strong>excessive heat</strong> and <strong>tornado</strong> events are most harmful to public health and <strong>flood</strong>, <strong>hurricane/typhoon</strong>, and <strong>storm surge</strong> events have the greatest negative economic consequences.</p>
 
 <p><img src="assets/img/fatalities_injuries.png" alt="width"></p>
 
-<p>According to the graph above, <strong>excessive heat</strong> is the leading cause of
-<strong>fatalities</strong> and <strong>tornados</strong> are the leading cause of <strong>injuries</strong> - 
-according to data collected by the NOAA from 1995-2011</p>
+<p>According to the graph above, <strong>excessive heat</strong> is the leading cause of <strong>fatalities</strong> and <strong>tornados</strong> are the leading cause of <strong>injuries</strong></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -128,12 +123,10 @@ according to data collected by the NOAA from 1995-2011</p>
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Appendix B</h2>
+    <h2>Appendix A (cont&#39;d)</h2>
   </hgroup>
   <article data-timings="">
-    <h3>Impact to Economy</h3>
-
-<p><img src="assets/img/damages.png" alt="width"></p>
+    <p><img src="assets/img/damages.png" alt="width"></p>
 
 <p>According to the graph above,  <strong>flood</strong> causes the highest financial 
 impact on <strong>property damage</strong> and <strong>drought</strong> causes the highest financial 
@@ -168,7 +161,7 @@ impact on <strong>crop damage</strong> according to data collected by the NOAA f
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Data &amp; Conclusions from EDA'>
+        data-slide=3 title='Data'>
          3
       </a>
     </li>
@@ -180,7 +173,7 @@ impact on <strong>crop damage</strong> according to data collected by the NOAA f
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Appendix B'>
+        data-slide=5 title='Appendix A (cont&#39;d)'>
          5
       </a>
     </li>
