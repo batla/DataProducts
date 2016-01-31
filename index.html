@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NOAA Storm Data Explorer</title>
+  <meta charset="utf-8">
+  <meta name="description" content="NOAA Storm Data Explorer">
+  <meta name="author" content="S. A. Batla">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>NOAA Storm Data Explorer</h1>
+    <h2>Explore NOAA Storm Data from 1950 - 2011</h2>
+    <p>S. A. Batla<br/>Director, Business Intelligence &amp; Data Analytics</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Synopsis</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Storms and other severe weather events can cause both public health and 
+economic problems for communities and municipalities. Many severe events can 
+result in fatalities, injuries, and property damage, and preventing such 
+outcomes to the extent possible is a key concern.</p>
+
+<p>This project involves exploring the U.S. National Oceanic and Atmospheric 
+Administration (NOAA) storm database. This database tracks characteristics 
+of major storms and weather events in the United States, including when and 
+where they occur, as well as estimates of any fatalities, injuries, and 
+property damage.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The NOAA Storm Data Explorer</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Navigation</h3>
+
+<p>The Explore area allows you to Explore the NOAA Storm data by state or by year.</p>
+
+<p>The user may choose to filter the data by a year range by adjusting the slider. In addition, the data may be filtered by event type.</p>
+
+<p>Data by state is visualized as a Map of the United States. NOTE: In this first version, Hawaii &amp; Alaska are excluded from the Map; however data is still available for those two states. In this view, the user may choose to filter by population or economic impact type.</p>
+
+<p>Data by year is visualized by using line charts.</p>
+
+<p>Data with current filters applied may be downloaded by the user for additional analysis of their choosing.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Data &amp; Conclusions from EDA</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Source Data</h3>
+
+<p>Data for the NOAA Storm Data Explorer is based off of the U.S. National Oceanic and Atmospheric 
+Administration (NOAA) storm database. Data was downloaded from this <a href="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2">site</a>. The data was then cleaned up and prepared for us by the NOAA Storm Data Explorer Application.</p>
+
+<p>Fields not essential for the application were removed and data was aggregated by state and by year, with event types counted and impact summed.</p>
+
+<p>The data used in this application, as well as the source code may be found on <a href="https://github.com/batla/DataProducts">github</a>.</p>
+
+<h3>Conclusions from earlier Exploratory Data Analysis</h3>
+
+<p>EDA was performed in an earlier project.</p>
+
+<p>Analysis conducted from data collected by the NOAA between 1995-2011 shows
+that <strong>excessive heat</strong> and <strong>tornado</strong> events are most harmful to public
+health and <strong>flood</strong>, <strong>hurricane/typhoon</strong>, and <strong>storm surge</strong> events have 
+the greatest negative economic consequences.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Appendix A</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Impact on Population Health</h3>
+
+<p><img src="assets/img/fatalities_injuries.png" alt="width"></p>
+
+<p>According to the graph above, <strong>excessive heat</strong> is the leading cause of
+<strong>fatalities</strong> and <strong>tornados</strong> are the leading cause of <strong>injuries</strong> - 
+according to data collected by the NOAA from 1995-2011</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Appendix B</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Impact to Economy</h3>
+
+<p><img src="assets/img/damages.png" alt="width"></p>
+
+<p>According to the graph above,  <strong>flood</strong> causes the highest financial 
+impact on <strong>property damage</strong> and <strong>drought</strong> causes the highest financial 
+impact on <strong>crop damage</strong> according to data collected by the NOAA from 1995-2011</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Synopsis'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The NOAA Storm Data Explorer'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Data &amp; Conclusions from EDA'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Appendix A'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Appendix B'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='NA'>
+         6
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
